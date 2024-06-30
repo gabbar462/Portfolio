@@ -1,0 +1,234 @@
+:root{
+    --main-bg : #1A1A2E;
+    --main-text : #5EFF78;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--main-text);
+}
+section{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2{
+    font-size: 4rem;
+}
+
+/* Home Section */
+.home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-img {
+    height: 40rem;
+    border-radius: 50%;
+}
+.home-section .text h2{
+    font-size: 4rem;
+}
+.home-section .text p{
+    font-size: 2rem;
+    font-style: normal;
+}
+@media (max-width:767px){
+    .avatar-img{
+        height: 20rem;
+    }
+}
+
+/* About Section */
+.about-section {
+    height: min-content;
+    padding: 5rem 0;
+}
+.about-section h2{
+    width: 100%;
+}
+.about-section .text{
+    padding: 0 5rem;
+}
+.text p{
+    padding: 0 2rem;
+    text-align: justify;
+    font-size: 25px;
+    color: white;
+}
+
+/* Skills Section */
+.skills-section {
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 3rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    height: 15rem;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 2px 2px #5EFF78;
+}
+
+.card .icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: white
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+/* Project-Section */
+.projects-section {
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 3rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.project-card {
+    border: 1px solid black;
+    width: 35rem;
+    height: 23rem;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.3s;
+}
+.project-card img{
+    width: inherit;
+    max-height: 16rem;
+    border-radius: inherit;
+}
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 2px 2px #5EFF78;
+}
+.project-card a{
+    background-color: var(--main-bg);
+    border: 1px solid var(--main-text);
+    color: var(--main-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    transition: all ease-in-out 0.3s;
+}
+.project-card h3{
+    padding: 0.2rem;
+    color: white;
+}
+.project-card a:hover{
+    background-color: var(--main-text);
+    color: var(--main-bg);
+}
+
+/* resume section */
+.resume-section,.contact-section {
+    height: max-content;
+    flex-direction: column;
+    padding: 3rem;
+}
+.resume-section a{
+    text-decoration: none;
+    height: 3rem;
+    width: 12rem;
+    border-radius: 2rem;
+    background-color: var(--main-bg);
+    border: 1px solid var(--main-text);
+    color: var(--main-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+.resume-section a:hover{
+    background-color: var(--main-text);
+    color: var(--main-bg);
+}
+/* contact-section */
+.contact-section{
+    height: max-content;
+    flex-direction: column;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-list li {
+    border-radius: 6px;
+    margin: 10px;
+    padding: 15px 20px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+    border: 1px solid var(--main-text);
+    color: var(--main-text);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-list li a {
+    text-decoration: none;
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    display: flex;
+    align-items: center;
+}
+.icon {
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+.contact-section .heading{
+    margin: 0;
+}
